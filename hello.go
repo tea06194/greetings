@@ -1,12 +1,18 @@
 package greetings
 
 import (
+	"errors"
 	"fmt"
 )
 
-// M - m test
-func Hello(name string) string {
+// H - h test
+func Hello(name string) (string, error) {
+	if name == "" {
+		return "", errors.New("empty name")
+	}
+
 	message := fmt.Sprintf("Hello %v, go", name)
-	return message
+	
+	return message, nil
 }
 
