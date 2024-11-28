@@ -34,7 +34,7 @@ func Hellos(names []string) (map[string]string, error) {
 func randomFormat() string {
     formats := []string{
         "Hi, %v. Welcome!",
-        "Great to see you, %v!",
+        "Great to sees you, %v!",
         "Hail, %v! Well met!",
     }
 
